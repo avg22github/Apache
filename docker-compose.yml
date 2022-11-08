@@ -1,8 +1,9 @@
 version: '3.9'
 services:
-  web:
-  image: nginx/latest
-  volumes:
-   - /docker:/etc/nginx/templates
-  ports:
-   - 8500:80
+  apache:
+    image: httpd:latest
+    container_name: apache-avg
+    ports:
+    - '8000:80'
+    volumes:
+    - ./website:/usr/local/apache2/htdocs
