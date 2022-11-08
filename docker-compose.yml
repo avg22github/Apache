@@ -5,5 +5,5 @@ services:
   volumes:
    - ./templates:/etc/nginx/templates
   ports:
-   - "8800:80"
+   - 8800:80
  
