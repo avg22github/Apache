@@ -5,4 +5,4 @@ services:
   volumes:
    - /docker:/etc/nginx/templates
   ports:
-   - 8800:80
+   - 8500:80
