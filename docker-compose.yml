@@ -3,6 +3,6 @@ services:
   web:
   image: nginx/latest
   volumes:
-   - .docker:/etc/nginx/templates
+   - /docker:/etc/nginx/templates
   ports:
    - 8800:80
